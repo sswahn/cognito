@@ -1,6 +1,6 @@
 import { CognitoIdentityProviderClient, InitiateAuthCommand } from '@aws-sdk/client-cognito-identity-provider'
 
-const LoginModel = () => {
+const Model = () => {
 
   const authUser = params => {
     const values = {
@@ -19,4 +19,4 @@ const LoginModel = () => {
   return { authUser }
 }
 
-export default LoginModel()
+export default Model()
