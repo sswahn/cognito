@@ -1,6 +1,4 @@
 import { CognitoIdentityProviderClient, SignUpCommand, AdminAddUserToGroupCommand } from '@aws-sdk/client-cognito-identity-provider'
-import { DynamoDBClient, PutItemCommand } from '@aws-sdk/client-dynamodb'
-import crypto from 'crypto'
 
 const Model = params => {
     
@@ -30,26 +28,7 @@ const Model = params => {
     return client.send(command)
   }
   
-  const addToTable = (id, params) => {
-    const date = new Date().toISOString()
-    const values = {
-      TableName: process.env.USERS_TABLE,
-      Item: {
-        partition_key: { S: id },
-        username: { S: params.username },
-        email: { S: params.email },
-        avatar: { S: '' },
-        date_created: { S: date },
-        date_updated: { S: date }
-      },
-      ReturnValues: "ALL_OLD"
-    }
-    const client = new DynamoDBClient()
-    const command = new PutItemCommand(values)
-    return client.send(command) 
-  }
-  
-  return { createUser, addToGroup, addToTable }
+  return { createUser, addToGroup }
 }
 
 export default Model()
