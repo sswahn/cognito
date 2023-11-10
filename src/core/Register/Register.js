@@ -1,4 +1,4 @@
-import validator from './Validator.mjs'
+import validator from './Validator.js'
 import model from './Model.js'
 
 const register = async event => {
