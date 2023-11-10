@@ -11,5 +11,4 @@ const forgotPassword = async event => {
   }
 }
 
-
 export default forgotPassword
