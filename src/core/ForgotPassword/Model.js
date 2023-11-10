@@ -1,6 +1,6 @@
 import { CognitoIdentityProviderClient, ForgotPasswordCommand } from '@aws-sdk/client-cognito-identity-provider'
 
-const ForgotPasswordModel = () => {
+const Model = () => {
   
   const post = params => {
     const values = {
@@ -15,4 +15,4 @@ const ForgotPasswordModel = () => {
   return { post }
 }
 
-export default ForgotPasswordModel()
+export default Model()
