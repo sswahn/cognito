@@ -6,8 +6,7 @@ const register = async event => {
     const body = JSON.parse(event.body)
     const params = await validator(body)
     const user = await model.createUser(params)
-    await model.addToGroup(params)
-    return  model.addToTable(user.UserSub, params) 
+    return model.addToGroup(params)
   } catch (error) {
     throw new Error(error)
   }
