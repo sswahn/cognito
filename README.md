@@ -24,15 +24,15 @@ import cognito from '@sswahn/cpgnito'
 ```
 
 ### Register
-The `register` function handles user registration, parsing and validating registration data before creating a new user and adding them to a specified group.
+The `register` function handles user registration creating a new user, and with the optional group parameter, adding them to a specified group.
 ```javascript
-await cognito.register(event)
+const response = await cognito.register(username, password, email, group)
 ```  
 
 ### Login
-The `login` function facilitates user authentication, parsing and validating login credentials before attempting to authenticate the user.  
+The `login` function facilitates user authentication with login credentials.  
 ```javascript
-await cognito.login(event)
+const response = await cognito.login(username, password)
 ```  
 
 ### Forgot Password
