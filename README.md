@@ -24,7 +24,7 @@ import cognito from '@sswahn/cpgnito'
 ```
 
 ### Register
-The `register` function handles user registration creating a new user, and with the optional group parameter, adding them to a specified group.
+The `register` function handles user registration, creating a new user, and with the optional group parameter, adding them to a specified group.
 ```javascript
 const response = await cognito.register(username, password, email, group)
 ```  
