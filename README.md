@@ -1,4 +1,4 @@
-# cognito 
+# Cognito 
 
 An AWS Cognito login system, for use with Lambda serverless functions.
 
