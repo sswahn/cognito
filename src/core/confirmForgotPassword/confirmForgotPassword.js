@@ -1,11 +1,9 @@
-import validator from './Validator.js'
 import model from  './Model.js'
 
 const confirmForgotPassword = async event => {
   try {
     const body = JSON.parse(event.body)
-    const params = await validator(body)
-    return model.post(params)
+    return model.post(body)
   } catch (error) {
     throw new Error(error)
   }
