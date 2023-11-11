@@ -2,7 +2,7 @@
   "name": "@sswahn/cognito",
   "version": "1.0.0-beta.0",
   "license": "MIT",
-  "description": "",
+  "description": "An AWS Cognito login system, for use with Lambda serverless functions.",
   "main": "src/index.js",
   "type": "module",
   "keywords": [
