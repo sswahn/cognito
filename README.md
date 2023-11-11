@@ -23,7 +23,7 @@ All functions require a `CLIENT_ID` environmental variable in your Lambda functi
 
 ### Import
 ```javascript
-import cognito from '@sswahn/cpgnito'
+import cognito from '@sswahn/cognito'
 ```
 
 ### Register
