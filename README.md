@@ -44,7 +44,7 @@ await cognito.forgotPassword(event)
 ### Confirm Forgot Password
 The `confirmForgotPassword` function handles the confirmation of a user-initiated password reset, parsing and validating confirmation details before updating the user's password.  
 ```javascript
-await cognito.confirmForgotPassword(event)
+const response = await cognito.confirmForgotPassword(code, username, password)
 ```
 
 ## License
