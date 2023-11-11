@@ -37,3 +37,6 @@ The confirmForgotPassword function handles the confirmation of a user-initiated 
 ```javascript
 const result = await cognito.confirmForgotPassword(event)
 ```
+
+## License
+Cognito is [MIT Licensed](https://github.com/sswahn/cognito/blob/main/LICENSE)
