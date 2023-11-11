@@ -19,7 +19,7 @@ npm install @sswahn/cognito
 
 ## Usage  
 
-This library uses the `AWS SDK for Javascript v3`. All functions require a `CLIENT_ID` environmental variable in your Lambda function, and if adding registered users to a group, a `USER_POOL_ID` environmental variable.  
+This library uses the `AWS SDK for JavaScript v3`. All functions require a `CLIENT_ID` environmental variable in your Lambda function, and if adding registered users to a group, a `USER_POOL_ID` environmental variable.  
 
 ### Import
 ```javascript
