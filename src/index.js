@@ -4,12 +4,10 @@ import forgotPassword from './core/forgotPassword.js'
 import confirmForgotPassword from './core/confirmForgotPassword.js'
 import decodeToken from './core/decodeToken.js'
 
-const cognito = {
+export {
   register,
   login,
   forgotPassword,
   confirmForgotPassword,
   decodeToken
 }
-
-export default cognito
