@@ -50,5 +50,11 @@ The `confirmForgotPassword` function handles the confirmation of a user-initiate
 const response = await cognito.confirmForgotPassword(code, username, password)
 ```
 
+### Decode Token
+The `decodeToken` function is a utility function for decoding JWT's issued by Cognito.  
+```javascript
+const payload = cognito.decodeToken(token)
+```
+
 ## License
 Cognito is [MIT Licensed](https://github.com/sswahn/cognito/blob/main/LICENSE)
