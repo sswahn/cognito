@@ -36,13 +36,13 @@ await cognito.login(event)
 ```  
 
 ### Forgot Password
-The `forgotPassword` function initiates the password recovery process by parsing and validating user information, typically involving sending a reset link or temporary password.  
+The `forgotPassword` function initiates the password recovery process typically by sending a reset link or temporary password.  
 ```javascript
 const response = await cognito.forgotPassword(username)
 ```
 
 ### Confirm Forgot Password
-The `confirmForgotPassword` function handles the confirmation of a user-initiated password reset, parsing and validating confirmation details before updating the user's password.  
+The `confirmForgotPassword` function handles the confirmation of a user-initiated password reset and updates the user's password.  
 ```javascript
 const response = await cognito.confirmForgotPassword(code, username, password)
 ```
