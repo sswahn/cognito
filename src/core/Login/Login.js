@@ -1,11 +1,18 @@
-import validator from './Validator.js'
-import model from './Model.js'
+import { CognitoIdentityProviderClient, InitiateAuthCommand } from '@aws-sdk/client-cognito-identity-provider'
 
-const login = async event => {
+const login = async (username, password) => {
   try {
-    const body = JSON.parse(event.body)
-    const params = await validator(body)
-    return model.authUser(params)
+    const values = {
+      ClientId: process.env.CLIENT_ID,
+      AuthFlow: 'USER_PASSWORD_AUTH',
+      AuthParameters : {
+        USERNAME: username,
+        PASSWORD: password
+      }
+    }
+    const client = new CognitoIdentityProviderClient()
+    const command = new InitiateAuthCommand(values)
+    return client.send(command)
   } catch (error) {
     throw new Error(error)
   }
