@@ -30,19 +30,19 @@ await cognito.register(event)
 ```  
 
 ### Login
-The login function facilitates user authentication, parsing and validating login credentials before attempting to authenticate the user.  
+The `login` function facilitates user authentication, parsing and validating login credentials before attempting to authenticate the user.  
 ```javascript
 await cognito.login(event)
 ```  
 
 ### Forgot Password
-The forgotPassword function initiates the password recovery process by parsing and validating user information, typically involving sending a reset link or temporary password.  
+The `forgotPassword` function initiates the password recovery process by parsing and validating user information, typically involving sending a reset link or temporary password.  
 ```javascript
 await cognito.forgotPassword(event)
 ```
 
 ### Confirm Forgot Password
-The confirmForgotPassword function handles the confirmation of a user-initiated password reset, parsing and validating confirmation details before updating the user's password.  
+The `confirmForgotPassword` function handles the confirmation of a user-initiated password reset, parsing and validating confirmation details before updating the user's password.  
 ```javascript
 await cognito.confirmForgotPassword(event)
 ```
