@@ -1,6 +1,6 @@
 import { CognitoIdentityProviderClient, SignUpCommand, AdminAddUserToGroupCommand } from '@aws-sdk/client-cognito-identity-provider'
 
-const createUser = (username, password, email) => {
+const createUser = async (username, password, email) => {
   const values = {
     ClientId: process.env.CLIENT_ID,
     Username: username,
@@ -15,7 +15,7 @@ const createUser = (username, password, email) => {
   return client.send(command)
 }
   
-const addToGroup = (username, group) => {
+const addToGroup = async (username, group) => {
   if (!group) {
     return
   }
