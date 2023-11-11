@@ -51,7 +51,7 @@ const response = await cognito.confirmForgotPassword(code, username, password)
 ```
 
 ### Decode Token
-The `decodeToken` function is a utility function for decoding JWT's issued by Cognito.  
+The `decodeToken` function is a utility function used for decoding JWT's issued by Cognito.  
 ```javascript
 const payload = cognito.decodeToken(token)
 ```
