@@ -39,7 +39,7 @@ const response = await cognito.login(username, password)
 ```  
 
 ### Forgot Password
-The `forgotPassword` function initiates the password recovery process by emailing a reset link.  
+The `forgotPassword` function initiates the password recovery process by emailing a confirmation code.  
 ```javascript
 const response = await cognito.forgotPassword(username)
 ```
