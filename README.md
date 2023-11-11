@@ -8,7 +8,6 @@ An AWS Cognito login system, for use with Lambda serverless functions.
 - **Password Recovery**: Enable users to recover their passwords effortlessly with the forgotPassword function, initiating a straightforward password recovery process.
 - **Password Reset Confirmation**: Allow users to confirm and complete the password reset process using the confirmForgotPassword function, ensuring a secure and user-friendly experience.
 - **Environment Variable Support**: Leverage Lambda environment variables to securely manage sensitive information and configuration settings within your Node.js code.
-- **Error Handling**: Benefit from robust error handling mechanisms using try-catch blocks, ensuring smooth and reliable execution even in the face of unexpected issues.
 - **Flexible Integration**: Integrate the authentication library seamlessly into your Node.js application, providing a foundation for secure and scalable user management.
 
 
