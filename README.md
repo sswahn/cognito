@@ -23,44 +23,38 @@ This library uses the `AWS SDK for JavaScript v3`. All functions require a `CLIE
 
 ### Import
 ```javascript
-import {
-  register,
-  login,
-  forgotPassword,
-  confirmForgotPassword,
-  decodeToken
-} from '@sswahn/cognito'
+import cognito from '@sswahn/cognito'
 ```  
 
 ### Register
 The `register` function handles user registration, creating a new user, and with the optional group parameter, adding them to a specified group. 
 ```javascript
-const response = await register(username, password, email, group)
+const response = await cognito.register(username, password, email, group)
 ```  
 
 ### Login
 The `login` function facilitates user authentication with login credentials.
 ```javascript
-const response = await login(username, password)
+const response = await cognito.login(username, password)
 ```  
 
 ### Forgot Password
 The `forgotPassword` function initiates the password recovery process by emailing a confirmation code.  
 ```javascript
-const response = await forgotPassword(username)
+const response = await cognito.forgotPassword(username)
 ```
 
 ### Confirm Forgot Password
 The `confirmForgotPassword` function handles the confirmation of a user-initiated password reset and updates the user's password.  
 ```javascript
-const response = await confirmForgotPassword(code, username, password)
+const response = await cognito.confirmForgotPassword(code, username, password)
 ```
 
 ### Decode Token
 The `decodeToken` function is a utility function used for decoding JWT's issued by Cognito.  
 ```javascript
-const response = await login(username, password)
-const payload = decodeToken(response.AuthenticationResult.IdToken)
+const response = await cognito.login(username, password)
+const payload = cognito.decodeToken(response.AuthenticationResult.IdToken)
 ```
 
 ## License
