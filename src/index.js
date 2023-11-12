@@ -4,7 +4,7 @@ import forgotPassword from './core/forgotPassword.js'
 import confirmForgotPassword from './core/confirmForgotPassword.js'
 import decodeToken from './core/decodeToken.js'
 
-const cognito {
+const cognito = {
   register,
   login,
   forgotPassword,
