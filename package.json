@@ -2,14 +2,12 @@
   "name": "@sswahn/cognito",
   "version": "1.0.0-beta.1",
   "license": "MIT",
-  "description": "An AWS Cognito login system, for use with Lambda serverless functions.",
+  "description": "Cognito is a robust AWS Cognito login system tailored for Node.js applications. It offers a comprehensive set of features to streamline user registration, authentication, and password management securely.",
   "main": "src/index.js",
   "type": "module",
   "keywords": [
     "cognito",
-    "lambda",
     "AWS",
-    "serverless",
     "login system",
     "node.js"
   ],
