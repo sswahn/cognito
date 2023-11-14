@@ -19,8 +19,6 @@ npm install @sswahn/cognito
 
 ## Usage  
 
-This library uses the `AWS SDK for JavaScript v3`. All functions require a `CLIENT_ID` environmental variable in your Lambda function, and if adding registered users to a group, a `USER_POOL_ID` environmental variable.  
-
 ### Import
 ```javascript
 import cognito from '@sswahn/cognito'
@@ -56,6 +54,12 @@ The `decodeToken` function is a utility function used for decoding JWT's issued 
 const response = await cognito.login(username, password)
 const payload = cognito.decodeToken(response.AuthenticationResult.IdToken)
 ```
+
+## Environmental Variables
+Ensure the following environmental variables are set:
+
+- CLIENT_ID: The name of your DynamoDB table. All functions require a `CLIENT_ID` environmental variable.
+- USER_POOL_ID: The name of your User Pool. Required if adding registered users to a group.
 
 ## License
 Cognito is [MIT Licensed](https://github.com/sswahn/cognito/blob/main/LICENSE)
