@@ -1,6 +1,6 @@
 # Cognito · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/cognito/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/cognito)
 
-An AWS Cognito login system, for Node.js.  
+Cognito is a robust AWS Cognito login system tailored for Node.js applications. It offers a comprehensive set of features to streamline user registration, authentication, and password management securely.  
 
 ## Features
 - **User Registration**: Easily integrate user registration functionality into your application using the register function, allowing users to create accounts securely.
