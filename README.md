@@ -1,6 +1,6 @@
 # Cognito · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/cognito/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/cognito)
 
-An AWS Cognito login system, for use with Lambda serverless functions.  
+An AWS Cognito login system, for Node.js.  
 
 ## Features
 - **User Registration**: Easily integrate user registration functionality into your application using the register function, allowing users to create accounts securely.
