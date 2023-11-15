@@ -31,9 +31,9 @@ const addToGroup = async (username, group) => {
 
 const register = async (username, password, email, group = undefined) => {
   try {
-    const user = await createUser(username, password, email)
-    const group =  await addToGroup(username, group)
-    return {user, group}
+    const userAdded = await createUser(username, password, email)
+    const groupAdded =  await addToGroup(username, group)
+    return {userAdded, groupAdded}
   } catch (error) {
     throw new Error(error)
   }
