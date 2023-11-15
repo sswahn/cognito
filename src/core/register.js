@@ -30,18 +30,6 @@ const addToGroup = async (username, group) => {
 }
 
 const register = async (username, password, email, group = undefined) => {
-  if (typeof username !== 'string') {
-    throw new TypeError('First argument must be of type string.')
-  }
-  if (typeof password !== 'string') {
-    throw new TypeError('Second argument must be of type string.')
-  }
-  if (typeof email !== 'string') {
-    throw new TypeError('Third argument must be of type string.')
-  }
-  if (group && typeof group !== 'string') {
-    throw new TypeError('Fourth argument must be of type string.')
-  }
   try {
     const userAdded = await createUser(username, password, email)
     const groupAdded =  await addToGroup(username, group)
